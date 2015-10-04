@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.n8n8baby.currency_en.us</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>56BEE3A7-27BF-4505-85F5-56AEAC655707</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>725D8A74-44FC-4CE5-8A5B-6517B2EBB752</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>94745303-A594-454B-A583-E9C05455E318</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>9B924048-00E6-463E-83DE-E4116792FBE4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B778516B-3EAC-42BD-BD2A-B073B31E12FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FC6397F7-B701-42AA-A797-FB80B49326AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FCA02BE3-F4F0-464A-AF1D-FB5D396390EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>FirePanther (US by n8n8baby)</string>
+	<key>description</key>
+	<string>Calculates the currency (US version)</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Currency US</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>$</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'USD';
+$fromText = '$';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from dollar</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>56BEE3A7-27BF-4505-85F5-56AEAC655707</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>€</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'EUR';
+$fromText = '€';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from euro</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FCA02BE3-F4F0-464A-AF1D-FB5D396390EA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>£</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'GBP';
+$fromText = '£';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from pound</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>94745303-A594-454B-A583-E9C05455E318</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>¥</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'JPY';
+$fromText = '¥';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from yen</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B778516B-3EAC-42BD-BD2A-B073B31E12FB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>c¥</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'CNY';
+$fromText = '¥';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from yuan renminbi</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FC6397F7-B701-42AA-A797-FB80B49326AA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>m$</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'MXN';
+$fromText = '$';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from Mexican pesos</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9B924048-00E6-463E-83DE-E4116792FBE4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>c$</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading the exchange rates...</string>
+				<key>script</key>
+				<string>$toCurrencies = array('USD', 'EUR', 'GBP', 'JPY', 'CAD', 'MXN', 'CHF', 'CNY');
+$toCurrenciesSymbols = array('$', '€', '£', '¥', '$', '$', 'CHF ', '¥'); 
+
+require 'workflows.php';
+$from = 'CAD';
+$fromText = '$';
+$q = "{query}";
+include 'main.calculator.php';</string>
+				<key>title</key>
+				<string>Calculating from Canadian dollar</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>725D8A74-44FC-4CE5-8A5B-6517B2EBB752</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Updated with different/new countries, with an American sensibility.</string>
+	<key>uidata</key>
+	<dict>
+		<key>56BEE3A7-27BF-4505-85F5-56AEAC655707</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>725D8A74-44FC-4CE5-8A5B-6517B2EBB752</key>
+		<dict>
+			<key>ypos</key>
+			<real>740</real>
+		</dict>
+		<key>94745303-A594-454B-A583-E9C05455E318</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>9B924048-00E6-463E-83DE-E4116792FBE4</key>
+		<dict>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
+		<key>B778516B-3EAC-42BD-BD2A-B073B31E12FB</key>
+		<dict>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>F75F476F-E06E-4666-A2E5-87D35D0B8DE3</key>
+		<dict>
+			<key>ypos</key>
+			<real>430</real>
+		</dict>
+		<key>FC6397F7-B701-42AA-A797-FB80B49326AA</key>
+		<dict>
+			<key>ypos</key>
+			<real>500</real>
+		</dict>
+		<key>FCA02BE3-F4F0-464A-AF1D-FB5D396390EA</key>
+		<dict>
+			<key>ypos</key>
+			<real>140</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://n8n8baby.net</string>
+</dict>
+</plist>
